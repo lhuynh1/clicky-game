@@ -1,14 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import DogCard from "./components/DogCard";
+import dog from "./dog.json";
 import './App.css';
 
 class App extends Component {
+  state = {
+    dog,
+    clickedDog: [],
+    score: 0
+  };
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Welcome to the memory game.</h1>
+          <p>Featuring Dogs in Food! Check out the awesome instagram page here: 
+              <a href="https://www.instagram.com/dogs_infood/?hl=en">@dogs_infood</a>
+          </p>
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
