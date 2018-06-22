@@ -10,14 +10,15 @@ class App extends Component {
     score: 0
   };
 
+  clicked
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          
           <h1 className="App-title">Welcome to the memory game.</h1>
           <p>Featuring Dogs in Food! Check out the awesome instagram page here: 
-              <a href="https://www.instagram.com/dogs_infood/?hl=en">@dogs_infood</a>
+              <a href="https://www.instagram.com/dogs_infood/?hl=en"> @dogs_infood</a>
           </p>
         </header>
         <p className="App-intro">
